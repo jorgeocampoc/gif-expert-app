@@ -16,7 +16,8 @@ export const AddCategory = ( { onNewCategory } ) => {
     }
 
     return (
-        <form onSubmit={ onSubmit }>
+       <div className="col-12 mb-2 ">
+         <form onSubmit={ onSubmit }>
             <input type="text"
                 placeholder="Search gifs"
                 value = { inputValue }
@@ -24,6 +25,7 @@ export const AddCategory = ( { onNewCategory } ) => {
                 onChange={ onInputChange }
             />
         </form>
+       </div>
         
     )
 }
