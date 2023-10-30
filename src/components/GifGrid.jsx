@@ -12,7 +12,7 @@ export const GifGrid = ( { category } ) => {
     <h3 className="fs-2 text-sm text-md text-lg text-xl text-xxs text-xxxs text-center pb-2 bg-primary"> { category } </h3>
     {
       //if corto 
-      isLoading && ( <h2 className="text-center "> Is loading .... </h2> )
+      isLoading && ( <h2 className="text-center bg-primary"> Is loading .... </h2> )
     }
     <div className="card-grid bg-primary">
      {

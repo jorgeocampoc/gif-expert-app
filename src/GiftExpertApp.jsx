@@ -21,16 +21,17 @@ export const GiftExpertApp = () => {
       </div>
 
      <div className="row  mt-3  pt-3 ps-3  m-1 ">
-        <div className="col-4 col-sm-3 col-md-2  ps-2 pe-4 pb-4 pt-2 ms-4  bg-primary border rounded ">
-          <Historial categories={categories} />
-        </div>
-        <div className="col-7 col-sm-8 col-md-9 container-fluid border bg-primary p-4 rounded ">
+        
+        <div className="col-11 col-sm-8 col-md-9 container-fluid border bg-primary p-4 rounded  ">
         <AddCategory onNewCategory={onAddCategory} />
         <div className="row text-white  ">
           {categories.map((category) => (
             <GifGrid key={category} category={category} />
           ))}
         </div>
+        </div>
+        <div className="col-11 col-sm-3 col-md-2  ps-2 pe-4 pb-4 pt-2 ms-3 bg-primary border rounded  mb-3 ">
+          <Historial categories={categories} />
         </div>
       </div>
 
