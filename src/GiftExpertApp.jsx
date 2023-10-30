@@ -22,7 +22,7 @@ export const GiftExpertApp = () => {
 
      <div className="row  mt-3  pt-3 ps-3  m-1 ">
         
-        <div className="col-11 col-sm-8 col-md-9 container-fluid border bg-primary p-4 rounded  ">
+        <div className="col-11 col-sm-8 col-md-9 container-fluid border bg-primary p-4 rounded mb-3  ">
         <AddCategory onNewCategory={onAddCategory} />
         <div className="row text-white  ">
           {categories.map((category) => (
@@ -30,7 +30,7 @@ export const GiftExpertApp = () => {
           ))}
         </div>
         </div>
-        <div className="col-11 col-sm-3 col-md-2  ps-2 pe-4 pb-4 pt-2 ms-3 bg-primary border rounded  mb-3 ">
+        <div className="col-11 col-sm-3 col-md-2  ps-2 pe-4 pb-4 pt-2 ms-3 bg-primary border rounded  mb-3 me-4  ">
           <Historial categories={categories} />
         </div>
       </div>
